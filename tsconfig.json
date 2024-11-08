@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+	  "target": "ESNext",                        // Uses the latest ECMAScript features
+	  "useDefineForClassFields": true,           // Aligns class field behavior with the ES spec
+	  "lib": ["DOM", "ESNext"],  // Includes necessary libs for browser and latest ES features
+	  "allowJs": false,                          // Disallows JavaScript files; if you want to include JS, set to `true`
+	  "skipLibCheck": true,                      // Speeds up compilation by skipping type checks on .d.ts files
+	  "esModuleInterop": true,                   // Improves compatibility with CommonJS modules
+	  "allowSyntheticDefaultImports": true,      // Allows default imports from modules without a default export
+	  "strict": true,                            // Enables all strict type-checking options
+	  "forceConsistentCasingInFileNames": true,  // Prevents issues with inconsistent casing in import paths
+	  "module": "ESNext",                        // Sets module output to ESNext, useful for ESM
+	  "moduleResolution": "Node",                // Node-style module resolution
+	  "resolveJsonModule": true,                 // Allows importing JSON files as modules
+	  "isolatedModules": true,                   // Ensures each file is treated as a separate module (important if using tools like Babel)
+	  "noEmit": true                             // Disables emitting output files; useful if you’re using TypeScript purely for type-checking
+	},
+	"include": ["Days"]                           // Limits TypeScript to files in the "Days" folder
+}
